@@ -410,8 +410,9 @@ var Dashboard = Dashboards.board('container', {
             </select>
           </div>
           <div class="FileHandler">
-            <input type="file" id="fileInput" accept=".xlsx"/>
-            <button id="extractDataButton">Extract Data</button>
+          <label for="fileInput" class="custom-button">Choose File</label>
+          <input type="file" id="fileInput" accept=".xlsx" style="display: none;" />
+            <button id="extractDataButton"  class="custom-button">Extract Data</button>
           </div>
           <div id="table-container">
           <table id="data-table" class="table">

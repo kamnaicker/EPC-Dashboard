@@ -24,6 +24,48 @@ body{
     flex-wrap: wrap;
 }
 
+select#portfolio-selector {
+    background: transparent; /* Transparent background */
+    border: 1px solid #ccc; /* Border */
+    color: aliceblue;
+    width: max-content;
+    letter-spacing: 0.7px;
+    height: 40px;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Some padding for better appearance */
+    appearance: none; /* Remove default appearance (usually the OS-specific dropdown arrow) */
+  }
+  
+  /* Style the dropdown options */
+  select#portfolio-selector option {
+    background: var(--highcharts-neutral-color-5); /* Semi-transparent white background */
+    width: max-content;
+    color: white; /* Text color */
+  }
+
+  .custom-button,
+select#portfolio-selector {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: aliceblue;
+  width: max-content;
+  letter-spacing: 0.7px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-button:hover,
+select#portfolio-selector:hover {
+  background: var(--highcharts-neutral-color-5);
+}
+
+#labelFile{
+    margin-right: 60px;
+}
+
 .InfoPane{
     height: max-content;
     width: max-content;
@@ -61,5 +103,5 @@ table {
     text-align: center;
   }
   #dashboard-col-0 {
-    height: 500px; /* Allow col-0 to expand to fit the content */
+    height: 550px; /* Allow col-0 to expand to fit the content */
   }
