@@ -1,0 +1,65 @@
+@import url("https://code.highcharts.com/css/highcharts.css");
+@import url("https://code.highcharts.com/dashboards/css/dashboards.css");
+
+body{
+    background-color: var(--highcharts-neutral-color-5);
+}
+#container {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+#UserInputArea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#EPCDataContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-items: center; */
+    font-size: smaller;
+    flex-wrap: wrap;
+}
+
+.InfoPane{
+    height: max-content;
+    width: max-content;
+}
+.FileHandler{
+    margin: 10px;
+}
+
+.highcharts-dashboards, .highcharts-dashboards-wrapper{
+    overflow-x: hidden!important;
+}
+
+.highcharts-legend-item>text {
+    fill:white!important;
+}
+
+.highcharts-root text {
+    fill:rgb(255, 255, 255)!important;
+    stroke-width: 0;
+}
+
+.highcharts-data-label text, text.highcharts-data-label {
+    fill: black !important;
+    font-weight: bold !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  #dashboard-col-0 {
+    height: 500px; /* Allow col-0 to expand to fit the content */
+  }
